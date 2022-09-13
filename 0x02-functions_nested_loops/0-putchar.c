@@ -1,20 +1,19 @@
 #include "main.h"
 /**
- * main - Entry point
- * Description: prints '_putchar\n'
- * Return: Always 0 (success)
+ * main - Prints _putchar as a message.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char str[] = "_putchar\n";
-int i = 0;
+	int str[] = {95, 112, 117, 116, 99, 104, 97, 114};
+	int count, sz;
 
-while (str[i] != '\0')
+	sz = sizeof(str) / sizeof(int);
+	for (count = 0; count < sz; count++)
 	{
-	char c = str[i];
-
-	_putchar(c);
-	i++;
+		_putchar(str[count]);
 	}
-return (0);
+	_putchar('\n');
+	return (0);
 }
