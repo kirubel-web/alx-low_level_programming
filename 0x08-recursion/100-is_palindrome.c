@@ -6,11 +6,11 @@
  */
 int is_palindrome(char *s)
 {
-	int i = 0;
+	int l = 0;
 
 	if (*s != '\0')
 	{
-		i++;
+		l++;
 		return (is_palindrome(s + 1) + 1);
 	}
 	return (1);
