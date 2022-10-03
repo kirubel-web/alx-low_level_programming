@@ -1,1 +1,1 @@
-static libraries
+learning static libraries
