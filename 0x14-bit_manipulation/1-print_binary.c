@@ -1,18 +1,17 @@
 #include "main.h"
 
 /**
-* print_binary - This is a function that prints the binary representation of a number
+* print_binary - a function that prints the binary representation of a number
 * @n: is the number to be printed in binary
 * Return: returns nothing to output
 */
 void print_binary(unsigned long int n)
 {
-	int i, c = 0;	
+  int i, c = 0;
 	unsigned long int current;
 	for (i = 63; i >= 0; i--)
 	{
 		current = n >> i;
-
 		if ((current & 1) == 1)
 		{
 			_putchar('1');
@@ -24,3 +23,4 @@ void print_binary(unsigned long int n)
 	if (c == 0)
 		_putchar('0');
 }
+
