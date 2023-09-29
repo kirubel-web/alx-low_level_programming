@@ -3,10 +3,10 @@
 /**
 * get_bit - Function that returns the value of a bit at a given index
 * @n: the integer to be operated on
-* @i: the index
+* @index: the index
 * Return: returns the value of the bit at index or -1 on error
 */
-int get_bit(unsigned long int n, unsigned int i)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	if (index > 63)
 		return (-1);
