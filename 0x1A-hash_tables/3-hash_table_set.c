@@ -1,11 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - adds an element to the hash table
- * @ht: hash table to add or update the key/value to
+ * hash_table_set - adds an element to the hash
  * @key: key
+ * @ht: hash table to add or update the key/value to
  * @value: value associated with the key
- * Return: 1 if it succeeded, 0 otherwise
+ * Return: 1 success, 0 fail
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
